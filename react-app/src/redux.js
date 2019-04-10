@@ -32,10 +32,7 @@ export const quoteRanksReducer=(state =initialState, action)=>{
             return Object.assign({},
                                 state,
                                 {quotevault:state.quotevault,authorquotes:action.payload.authorquotes,ready:state.ready})
-      case 'SET_AUTHOR_QUOTES':
-            return Object.assign({},
-                                state,
-                                {quotevault:state.quotevault,authorquotes:state.authorquotes,ready:true})                          
+                                
        default:
              return state;
     }
