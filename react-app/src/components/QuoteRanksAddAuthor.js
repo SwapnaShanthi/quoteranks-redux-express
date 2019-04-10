@@ -32,7 +32,7 @@ class QuoteRanksAddAuthor extends Component {
   handleChange=(e)=>{
     this.setState({[e.target.name]:e.target.value});
     if(!this.validate(e.target.name,e.target.value)){
-      this.setState({authornamevalidationerror:"Please enter a quote with minimum 3 characters"});
+      this.setState({authornamevalidationerror:"Please enter a name with minimum 3 characters"});
     }else{
       this.setState({authornamevalidationerror:""}); 
     }
